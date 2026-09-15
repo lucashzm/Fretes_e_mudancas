@@ -36,3 +36,12 @@ window.addEventListener('scroll', () => {
 // Remove o selo decorativo "Orçamento / sem compromisso" do card do caminhão.
 const floatingTag = document.querySelector('.floating-tag');
 if (floatingTag) floatingTag.remove();
+
+// Dá espaçamento entre as informações do rodapé.
+const footerInfo = document.querySelector('.footer-bottom > div');
+if (footerInfo) {
+  footerInfo.style.display = 'flex';
+  footerInfo.style.flexWrap = 'wrap';
+  footerInfo.style.gap = '18px';
+  footerInfo.style.alignItems = 'center';
+}
