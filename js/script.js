@@ -32,3 +32,7 @@ const header = document.querySelector('.site-header');
 window.addEventListener('scroll', () => {
   if (header) header.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
+
+// Remove o selo decorativo "Orçamento / sem compromisso" do card do caminhão.
+const floatingTag = document.querySelector('.floating-tag');
+if (floatingTag) floatingTag.remove();
